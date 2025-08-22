@@ -1,4 +1,14 @@
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #dbe6f6, #c579ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
 #calculator {
+
     width: 420px;
     margin: 50px auto;
     padding: 30px;
@@ -53,4 +63,21 @@ button:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+
+.calculator-display {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.calculator-display.error {
+    background-color: #ffe5e5;
+    color: #a40000;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
